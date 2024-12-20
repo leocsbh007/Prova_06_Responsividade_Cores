@@ -1,0 +1,58 @@
+:root {
+    --cor-principal: blue;
+    --cor-secundaria: green;
+    --cor-texto: #333;
+    --cor-fundo:#f4f4f4;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+h1, p{
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 4vw;
+    color: var(--cor-principal);
+}
+
+p{
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--cor-secundaria);
+}
+
+/* media query para tela Mobile */
+@media(max-width: 768px){
+    h1{
+        font-size: 8vw;
+    }
+
+    p{
+        font-size: 4rem;
+    }
+}
+
+/* media query para tel Desktop */
+@media(min-width: 769px){
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
